@@ -15,7 +15,7 @@ $SPEC{calc_cpan_changes_cwalitee} = {
     v => 1.1,
     summary => 'Calculate CPAN Changes cwalitee',
     args => {
-        %Cwalitee::Common::args_calc,
+        Cwalitee::Common::args_calc('CPAN::Changes::'),
         path => {
             schema => 'pathname*',
             pos => 0,
